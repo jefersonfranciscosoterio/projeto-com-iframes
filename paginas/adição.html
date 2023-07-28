@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações matemáticas</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            font: normal 18pt Arial;
+            background-color: lightgrey;
+        }
+        header{
+            width: 100vw;
+            height: 200px;
+            
+            margin-top: 0px;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            background-image: linear-gradient(to top, black, white);
+            
+        }
+        header > h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            color: white;
+            text-align: center;
+           
+        }
+          
+        nav{
+            background-color: black;
+            height: 40px;text-align: center;
+        }
+
+        input{
+            font: normal 15pt Arial;
+           
+            margin-left: 65px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+        }
+
+
+        div.adição{
+            background-color: #ddc9ce;
+            width: 398px;
+            height: 400px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: justify;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+           
+        }
+        h2{
+            color: #570115;
+            text-align: center;
+            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.61);
+        }
+        div#res{
+            margin-top: 20px;
+            text-align: center;
+            background-color: white;
+            color: rgb(253, 1, 1);
+            font-weight: bolder;
+            width: 350px;
+            height: 100px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+        }
+        input.botao{
+            background-color: #5f0117;
+            color: white;
+            padding: 10px;
+            margin-left: 130px;
+            font-weight: bolder;
+             }
+
+             footer{
+                width: 100vw;
+                height: 40px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                
+             }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="adição">
+        <h2>Somando valores</h2>
+        
+            <input type="number" name="txtn1" id="txtn1" placeholder="Digite um número">+
+            <input type="number" name="txtn2" id="txtn2" placeholder="Digite o outro número">
+        <input type="button" value="Somar" onclick="somar()" class="botao">
+        
+        
+        <div id="res">Resultado</div>
+        <script>
+        function somar(){
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                 var res = window.document.getElementById('res')
+                 var n1 = Number(tn1.value)
+                 var n2 = Number(tn2.value)
+                 var s = n1 + n2
+
+                 res.innerHTML = `A soma de ${n1} mais ${n2} é igual a <strong>${s}</strong>`
+                 
+        }
+        
+        </script>
+
+    </div>>
+      
+</body>
+</html>
