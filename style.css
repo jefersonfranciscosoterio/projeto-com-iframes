@@ -9,7 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(img-fundo.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size:auto;
     background-attachment: fixed;
     }
 
@@ -32,12 +32,11 @@ width: 397px;
 height: 500px;
 display: flex;
 margin: auto;
-margin-bottom: 30px;
+margin-bottom: 50px;
 border: 3px solid black;
 border-radius: 10px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+box-shadow: 5px 5px 10px rgba(202, 200, 200, 0);
 }
-
 footer{
 background-color: black;
 font-size: 1em;
